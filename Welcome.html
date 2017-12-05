@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Welcome  |  Bienvenue </title>
+        
+        <link rel="icon" href="images/icon.png">
+        
+        <link rel="stylesheet" type="text/css" href="styles/welcomeCSS.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>        
+        <script src="scripts/welcomeJS.js"></script>  
+           
+        
+
+    </head>
+
+    <body onload="myFunction()" style="margin:0; overflow:hidden;">
+                            
+        <div id="loader"></div>    
+        <span>    
+            <div id = "main-wrapper" style="display:none;" class="animate-bottom">                    
+                <div id = "contents">                    
+                    <div id = "contents-text">
+
+                        <h2> Welcome </h2>
+                        <p>  You are immune to a plague and the enemies believe you are no threat and are avoiding you <br> protect the citizens behind you, don't let the enemy by</p>
+
+                        <div class="dropdown">
+                            <button class="dropbtn">Select The Level To Start On</button>
+                            <div class="dropdown-content">
+                                <select id="levelList" name="aa" onchange="reportLevels(this.value)"> 
+                                    <option value="">Please select</option>
+                                    <option value="oneLevel">Level 1</option>
+                                    <option value="twoLevels">Level 2</option>
+                                    <option value="threeLevels">Level 3</option>
+                                    <option value="fourLevels">Level 4</option>
+                                    <option value="fiveLevels">Level 5</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+
+                        <br>                        
+                        
+                        <div class="dropdown">
+                            <button class="dropbtn">Select The Difficulty</button>
+                            <div class="dropdown-content-difficulty">
+                                <select id="difficultyList" name="ab" onchange="reportDifficulty(this.value)"> 
+                                    <option value="">Please select</option>
+                                    <option value="beginner"> Beginner </option>
+                                    <option value="easy"> Easy </option>
+                                    <option value="medium"> Medium </option>
+                                    <option value="hard"> Hard </option>
+                                    <option value="goodLuck"> Good Luck</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <br>                      
+
+                        <div class="dropdown">
+                            <button class="dropbtn">Controls and Instructions</button>
+                            <div class="dropdown-content"> 
+                                <option> W and S Will Move The Character</option>
+                                <option> SPACE Key To Shoot </option>
+                                <option> ESC Key To Pause </option>
+                                <option> Key R To Reload</option>
+                                <option> </option>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                     </div>
+                     <button type="button" id="btnStart">You Ready!</button>
+                     <p id="ifError"> </p>
+            
+                 </div>
+            
+            </div>
+            </span>
+            
+            
+    </body>
+
+</html>
+
+
